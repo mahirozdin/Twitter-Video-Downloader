@@ -13,6 +13,9 @@ $urlfetch = explode($url,'/');
 $url_username = $urlfetch[3]; //    /xxxxxxxx/ part of URL
 $url_tweetid = $urlfetch[5]; //    /yyyyyyyyy/ part of URL
 
+$html_output = get_html_output($url); // we got the html output of tweet page as a string.
+
+
 // Will be continued... 
 
 
