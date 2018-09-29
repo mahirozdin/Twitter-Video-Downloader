@@ -1,4 +1,4 @@
-# Twitter-Video-Downloader
+# Twitter Video Downloader Using PHP
 Open Source Twitter Video Downloder PHP Script
 
 # How to Install
