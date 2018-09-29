@@ -9,7 +9,7 @@ Open Source Twitter Video Downloder PHP Script
 
 # Methods.
 
-getTweetInfo($connection,$tweet_id);
+$tweet = getTweetInfo($connection,$tweet_id);
 
 getTweetText($tweet)
 
