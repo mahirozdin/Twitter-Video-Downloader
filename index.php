@@ -1,23 +1,38 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+require "functions.php";
+use Abraham\TwitterOAuth\TwitterOAuth;
 
-// Functions are included here.
-include("includes/functions.php");
+// API Connection Parameters.
+$consumer_key = "YOUR_CONSUMER_KEY";
+$consumer_secret_key = "YOUR_CONSUMER_SECRET";
 
-// Typing URL Which contains the video that we need.
-$url = "https://twitter.com/kthesesmyrna/status/969900650225192960" // etc: https://twitter.com/xxxxxxxx/status/yyyyyyyyyyy 
+// My tokens created by using Twitter Applications page create my tokens.
+$access_token = "YOUR_TOKEN";
+$access_token_secret = "YOUR_TOKEN_SECRET";
 
-// Fetching URL to get Tweet ID and Poster Username 
-$urlfetch = explode($url,'/');
-
-// We got user name and tweet id. It's not necessary for video downloading But it might be useful to collect meta data's.
-$url_username = $urlfetch[3]; //    /xxxxxxxx/ part of URL
-$url_tweetid = $urlfetch[5]; //    /yyyyyyyyy/ part of URL
-
-$html_output = get_html_output($url); // we got the html output of tweet page as a string.
-
-
-// Will be continued... 
+// Connection and getting permisions from API Connection parameters.
+$connection = new TwitterOAuth($consumer_key, $consumer_secret_key, $access_token, $access_token_secret);
+$content = $connection->get("account/verify_credentials");
 
 
+// Getting Tweet Informations.
+$tweet_id = "1045676724770484224"; // Example_Tweet_id  get from :  https://twitter.com/TwitterMusic/status/1045676724770484224
+$tweet = getTweetInfo($connection,$tweet_id);
+
+//Get Tweet Text
+echo 'Tweet Text:'.getTweetText($tweet).'<br>';
+ 
+//Get Tweet Video Image Thumb
+echo 'Tweet Thumb:'.getTweetImage($tweet).'<br>';
+
+//Get Tweet Video URL
+echo 'Tweet Video URL:'.getTweetVideo($tweet);
+
+	
+	//	print_r ($tweet); // see all json formatted datas you can reach.
 
 ?>
+
+	
