@@ -5,12 +5,12 @@ require "functions.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
 
 // API Connection Parameters.
-$consumer_key = "PKH803R9mSKnESzIHDYoslV4r";
-$consumer_secret_key = "sRrObGM0DA0IKjXl3JTmf7g7VzBCW3w8ajCPKVWrnW2hKCFzzK";
+$consumer_key = "Key";
+$consumer_secret_key = "Secret";
 
 // My tokens created by using Twitter Applications page create my tokens.
-$access_token = "891375250780377088-pa3CCCpxL1COetaXXZpqP3mPltWkyII";
-$access_token_secret = "gQzlTzFUX0K5GUZTzaOxjuUo2L72NWFLOhGy71lfOezNC";
+$access_token = "Token";
+$access_token_secret = "Token Secret";
 
 // Connection and getting permisions from API Connection parameters.
 $connection = new TwitterOAuth($consumer_key, $consumer_secret_key, $access_token, $access_token_secret);
