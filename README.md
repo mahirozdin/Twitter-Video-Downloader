@@ -17,6 +17,6 @@ getTweetImage($tweet)
 
 getTweetVideo($tweet)
 
-![alt text](https://i.hizliresim.com/2abJRq.png)
+![alt text](https://github.com/mahirozdin/Twitter-Video-Downloader/blob/master/sc1.png)
 
 Uses Twitter API v1.1 as a library credits : TwitterOAuth (https://github.com/abraham/twitteroauth)
