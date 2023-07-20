@@ -1,9 +1,10 @@
-# Twitter Video Downloader Live Anroid App
+# Twitter Video Downloade PHP
 
 This app is one of the apps created using this repository.
 [Twitter Video Downloader](https://play.google.com/store/apps/details?id=com.videodownloader.twittervideoindir)
 
-# Twitter Video Downloader Using PHP
+# THIS REPOSITORY IS DEPRECED DUE TO TWITTER DEVELOPERS UPDATE API1.1 NO MORE IN USE. 
+Tweet lookups is not supported on Basic Plan of Twitter's API anymore. You would have basic or pro plan to get tweet info. For more information check Twitter Developers Page. 
 
 Open Source Twitter Video Downloder PHP Script
 
