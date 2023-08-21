@@ -4,6 +4,7 @@ This app is one of the apps created using this repository.
 [Twitter Video Downloader](https://play.google.com/store/apps/details?id=com.videodownloader.twittervideoindir)
 
 # THIS REPOSITORY IS DEPRECED DUE TO TWITTER DEVELOPERS UPDATE API1.1 NO MORE IN USE. 
+Consider using https://rapidapi.com/FastTwitterAPI/api/twitter-api50/
 Tweet lookups is not supported on Free Plan of Twitter's API anymore. You should have buy basic or pro plan to get tweet info. For more information check Twitter Developers Page. 
 
 Open Source Twitter Video Downloder PHP Script
